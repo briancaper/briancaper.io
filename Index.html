@@ -87,6 +87,7 @@
             transition: transform 0.3s ease, border-top-color 0.3s ease;
             height: 100%;
             background-color: #fdfdfd;
+            overflow: hidden;
         }
         .card-custom:hover {
             transform: translateY(-5px);
@@ -96,11 +97,24 @@
             color: var(--dark-navy);
             font-weight: 600;
         }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
 
         /* Vision & Mission Split */
         .split-section {
             background-color: var(--muted-gray);
             padding: 70px 0;
+        }
+        .split-img {
+            border-radius: 6px;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
 
         /* Callout Box */
@@ -153,12 +167,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competencies">Competencies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#mission-vision">Mission & Vision</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -180,47 +188,47 @@
     </header>
 
     <section id="about" class="container py-5">
-        <div class="row g-4">
-            <div class="col-lg-12">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
                 <h2 class="section-title">About Brian Caper</h2>
                 <p class="fs-5 text-dark">Brian Caper is a skilled economic development professional with nearly 15 years of experience working in city economic growth, urban planning, and workforce development. He has a strong background in finance and urban and regional planning and holds an Executive MBA from the University of Florida.</p>
                 <p>Throughout his career, Brian Caper has worked on large redevelopment projects, public-private partnerships, and economic programs designed to support local communities. He has served in senior leadership positions, including Economic & Workforce Development Director and Managing Director for City Development, where he managed multimillion-dollar budgets, major infrastructure assets, and large redevelopment efforts.</p>
+            </div>
+            <div class="col-lg-5 text-center">
+                <img src="1.jpg" alt="Brian Caper Professional Profile" class="img-fluid rounded shadow border" style="border-left: 5px solid var(--primary-green) !important;">
             </div>
         </div>
     </section>
 
     <section id="competencies" class="bg-light py-5">
         <div class="container">
-            <h2 class="section-title text-center mx-auto mb-5">Core Competencies</h2>
+            <h2 class="section-title text-center mx-auto mb-5">Core Competencies of Brian Caper</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card card-custom p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa-solid fa-chart-line fa-2x me-3 text-success"></i>
-                            <h3 class="card-custom-title h5 mb-0">Economic Development & Strategic Planning</h3>
+                    <div class="card card-custom">
+                        <img src="3.jpg" class="card-img-top" alt="Economic Development and Strategic Planning">
+                        <div class="card-body p-4">
+                            <h3 class="card-custom-title h5 mb-3">1. Economic Development and Strategic Planning</h3>
+                            <p class="small text-muted">Strong expertise in developing and implementing economic growth strategies that support long-term regional development. This includes identifying investment opportunities, supporting business attraction and retention, and designing policies that strengthen local economies. The focus is on using data-driven planning and financial insight to guide sustainable and balanced growth.</p>
                         </div>
-                        <p class="small text-muted">Strong expertise in developing and implementing economic growth strategies that support long-term regional development. This includes identifying investment opportunities, supporting business attraction and retention, and designing policies that strengthen local economies.</p>
-                        <p class="small text-muted">The focus is on using data-driven planning and financial insight to guide sustainable and balanced growth across regional networks.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card card-custom p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa-solid fa-building fa-2x me-3 text-success"></i>
-                            <h3 class="card-custom-title h5 mb-0">Urban Development & Infrastructure</h3>
+                    <div class="card card-custom">
+                        <img src="4.jpg" class="card-img-top" alt="Urban Development and Infrastructure Management">
+                        <div class="card-body p-4">
+                            <h3 class="card-custom-title h5 mb-3">2. Urban Development and Infrastructure Management</h3>
+                            <p class="small text-muted">Experienced in leading urban redevelopment and infrastructure initiatives that improve city spaces and support community needs. This involves coordinating with government bodies, private sector partners, and community stakeholders to deliver complex projects such as redevelopment areas, housing developments, and public infrastructure improvements. Strong capability in managing budgets, timelines, and multi-stakeholder projects ensures effective delivery.</p>
                         </div>
-                        <p class="small text-muted">Experienced in leading urban redevelopment and infrastructure initiatives that improve city spaces and support community needs. This involves coordinating with government bodies, private sector partners, and community stakeholders.</p>
-                        <p class="small text-muted">Strong capability in managing budgets, timelines, and multi-stakeholder structures ensures effective delivery of complex redevelopment zones, housing, and public improvements.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card card-custom p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa-solid fa-users fa-2x me-3 text-success"></i>
-                            <h3 class="card-custom-title h5 mb-0">Workforce & Community Growth</h3>
+                    <div class="card card-custom">
+                        <img src="5.jpg" class="card-img-top" alt="Workforce Development and Community Economic Growth">
+                        <div class="card-body p-4">
+                            <h3 class="card-custom-title h5 mb-3">3. Workforce Development and Community Economic Growth</h3>
+                            <p class="small text-muted">Skilled in designing and supporting workforce development programs that connect people with employment opportunities and skill-building pathways. This includes aligning training programs with industry demand and promoting partnerships between educational institutions, employers, and public agencies. The goal is to strengthen workforce participation and ensure that economic growth benefits local communities.</p>
                         </div>
-                        <p class="small text-muted">Skilled in designing and supporting workforce development programs that connect people with employment opportunities and skill-building pathways to scale community progress.</p>
-                        <p class="small text-muted">This includes aligning training programs with industry demand and promoting partnerships between educational institutions, employers, and public agencies to share regional prosperity.</p>
                     </div>
                 </div>
             </div>
@@ -228,23 +236,11 @@
     </section>
 
     <section class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-md-7">
-                <h2 class="section-title">Strategic Vision in Practice</h2>
-                <div class="mb-4">
-                    <h5>Innovative Public-Private Partnerships</h5>
-                    <p class="text-muted">Brian leverages high-level alignment methods between corporate stakeholders and city networks. This unified front helps direct incoming fiscal investments safely into practical, physical infrastructures that dynamically support expansion.</p>
-                </div>
-                <div class="mb-4">
-                    <h5>Data-Informed Macro Expansion</h5>
-                    <p class="text-muted">By tracking micro-economic data markers and demographic shifts, urban models can be accurately configured ahead of schedule, mitigating risk structures and safeguarding communal equity profiles safely over multi-generational spans.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-5 callout-box p-4 rounded shadow-sm">
+        <div class="row g-5 align-items-center justify-content-center">
+            <div class="col-md-8 callout-box p-5 rounded shadow-sm text-center">
                 <h3 class="h4 mb-3" style="color: var(--dark-navy); font-weight:700;"><i class="fa-solid fa-quote-left me-2 text-success"></i>Core Philosophy</h3>
-                <p class="fst-italic">"Sustainable economic growth happens when we align clear city layout planning with strong workforce development programs."</p>
-                <p class="fw-bold text-end mb-0">— Brian Caper</p>
+                <p class="fs-4 fst-italic">"Sustainable economic growth happens when we align clear city layout planning with strong workforce development programs."</p>
+                <p class="fw-bold fs-5 text-end mb-0" style="color: var(--dark-navy);">— By Brian Caper</p>
             </div>
         </div>
     </section>
@@ -253,10 +249,12 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6">
+                    <img src="6.jpg" alt="Our Mission Landscape" class="split-img">
                     <h3 class="fw-bold mb-3" style="color: var(--dark-navy);"><i class="fa-solid fa-bullseye me-2" style="color: var(--primary-green);"></i>My Mission</h3>
                     <p>To drive inclusive and sustainable economic growth by leading strategic urban development, strengthening workforce systems, and fostering strong public-private partnerships that create long-term community value. The focus is on delivering practical, data-informed solutions that improve local economies while ensuring that development benefits residents, businesses, and future generations.</p>
                 </div>
                 <div class="col-md-6">
+                    <img src="7.jpg" alt="Our Vision Blueprint" class="split-img">
                     <h3 class="fw-bold mb-3" style="color: var(--dark-navy);"><i class="fa-solid fa-eye me-2" style="color: var(--primary-green);"></i>My Vision</h3>
                     <p>To help build resilient, forward-looking cities where economic development, infrastructure, and workforce opportunities are fully integrated creating communities that are both economically competitive and socially equitable. The long-term aim is a model of urban growth where prosperity is shared, development is sustainable, and every resident has access to meaningful opportunity.</p>
                 </div>
@@ -269,14 +267,13 @@
             <h5 class="mb-4" style="color: var(--primary-green);">Connect with Brian Caper</h5>
             
             <div class="social-icons mb-4">
-                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" title="Email Contact"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="#" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+             
             </div>
             
             <hr style="background-color: var(--primary-green); height: 1px; border: none; opacity: 0.5;">
-            
-            <p class="small text-muted mb-0">&copy; 2026 Brian Caper. All Rights Reserved. | Urban Economic Development</p>
+        
         </div>
     </footer>
 
